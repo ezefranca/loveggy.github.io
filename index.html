@@ -74,31 +74,26 @@
                     <h2 class="subtitle">Estamos trabalhando duro para lançar nossa plataforma :)</h2>
                     <br/>
                     <!-- START HERE -->
-   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-   <!-- Style The Contact Form How Ever You Prefer -->
+  
    <link rel="stylesheet" href="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/style.css">
 
-  <form id="gform" method="POST" class="pure-form pure-form-stacked"
+  <form id="gform" method="POST"
   action="https://script.google.com/macros/s/AKfycbyjUjaY998V0pDl-TM3A3Ie_M-0bfIu3OrX2NnYd3udIpKRA-CV/exec">
     <!-- change the form action to your script url -->
 
-    <fieldset class="pure-group">
-      <input id="email" name="email" type="email" value=""
+    <fieldset>
+      <input id="email" class="form-control" name="email" type="email" value=""
       required placeholder="exemplo@email.com"/>
       <span id="email-invalid" style="display:none">
-        Must be a valid email address</span>
+        Digite um email válido!</span>
     </fieldset>
-      
-    <button class="button-success pure-button button-xlarge">
+    <button class="btn btn-theme"">
       <i class="fa fa-paper-plane"></i>&nbsp;Seja notificad@</button>
 
   </form>
 
-  <!-- Customise the Thankyou Message People See when they submit the form: -->
-  <div style="display:none;" id="thankyou_message">
-    <h2><em>Thanks</em> for contacting us!
-      We will get back to you soon!</h2>
+  <div style="display:none;" id="thankyou_message" class="subtitle">
+    <h2><em>Obrigado :)</em> Em breve entraremos em contato!</h2>
   </div>
 
   <!-- Submit the Form to Google Using "AJAX" -->
