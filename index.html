@@ -1,14 +1,195 @@
-<html>
-<div class="homepage-hero-module">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="title" content="ScoopThemes">
+    <meta name="ROBOTS" content="vegan, vegano, vegetariano">
+    <meta name="description" content="">
+    <meta name="abstract" content="">
+   
+    <meta name="author" content="www.loveggy.com">
+    <meta name="publisher" content="www.loveggy.com">
+    <meta name="copyright" content="www.loveggy.com">
+    <meta name="revisit-after" content="1 days">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+
+    <title>loveggy | a new veggy experience</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/animations.css">
+
+    <!-- siimple style -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://downloads.mailchimp.com/js/jquery.form-n-validate.js"></script>
+
+</head>
+
+<body>
+
+    <div class="cloud floating">
+        <img src="assets/img/cloud.png" alt="Scoop Themes">
+    </div>
+
+    <div class="cloud pos1 fliped floating">
+        <img src="assets/img/cloud.png" alt="Scoop Themes">
+    </div>
+
+    <div class="cloud pos2 floating">
+        <img src="assets/img/cloud.png" alt="Scoop Themes">
+    </div>
+
+    <div class="cloud pos3 fliped floating">
+        <img src="assets/img/cloud.png" alt="Scoop Themes">
+    </div>
+
+    <div class="homepage-hero-module">
     <div class="video-container">
         <div class="filter"></div>
         <video autoplay loop class="fillWidth">
-            <source src="/intro" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-            <source src="/intro" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+            <source src="assets/mp4/Big-City-Life.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+            <source src="assets/webm/Big-City-Life.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
         </video>
-        <div class="poster hidden">
-            <img src="PATH_TO_JPEG" alt="">
+
+
+            <div id="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <img src="assets/img/logo.png" height="80" width="124" alt="loveggy">
+                    <br/>
+                    <br/>
+                    <h2 class="subtitle">Estamos trabalhando duro para lançar nossa plataforma :)</h2>
+                    <br/>
+                        <form class="form-inline validate signup" action="https://script.google.com/macros/s/AKfycbyjUjaY998V0pDl-TM3A3Ie_M-0bfIu3OrX2NnYd3udIpKRA-CV/exec" method="POST">
+                        <div class="form-id">
+                            <input type="email" class="form-control" name="EMAIL" id="exampleInputEmail1" placeholder="digite seu email">
+                        
+                        <input type="submit" name="subscribe" value="Seja avisado!" class="btn btn-theme">
+                        </div>
+                    </form>
+             
+<!--                     <form class="form-inline validate signup" action="http://scoopthemes.us8.list-manage.com/subscribe/post-json?u=c535e62cabdc2bfeb87bff6de&amp;id=d969b07f82&c=?" method="get" role="form">
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="EMAIL" id="exampleInputEmail1" placeholder="digite seu email">
+                        </div>
+                        <input type="submit" name="subscribe" value="Seja !" class="btn btn-theme">
+                    </form> -->
+                       <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+   <!-- Style The Contact Form How Ever You Prefer -->
+
+<!--     <form id="gform" method="POST" class="pure-form pure-form-stacked"
+  action="https://script.google.com/macros/s/AKfycbyjUjaY998V0pDl-TM3A3Ie_M-0bfIu3OrX2NnYd3udIpKRA-CV/exec"> -->
+    <!-- change the form action to your script url -->
+ <!--  </form> -->
+                    <br/>
+                </div>
+                <div class="col-sm-12 align-center">
+                    <ul class="social-network social-circle">
+                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-3">
+                    <p class="copyright">Copyright &copy; 2017 - <a href="http://loveggy.com">loveggy.com</a>
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
+
+
+    </div>
 </div>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://downloads.mailchimp.com/js/jquery.form-n-validate.js"></script>
+    <script>
+
+$( document ).ready(function() {
+
+    scaleVideoContainer();
+
+    initBannerVideoSize('.video-container .poster img');
+    initBannerVideoSize('.video-container .filter');
+    initBannerVideoSize('.video-container video');
+
+    $(window).on('resize', function() {
+        scaleVideoContainer();
+        scaleBannerVideoSize('.video-container .poster img');
+        scaleBannerVideoSize('.video-container .filter');
+        scaleBannerVideoSize('.video-container video');
+    });
+
+});
+
+function scaleVideoContainer() {
+
+    var height = $(window).height() + 5;
+    var unitHeight = parseInt(height) + 'px';
+    $('.homepage-hero-module').css('height',unitHeight);
+
+}
+
+function initBannerVideoSize(element){
+
+    $(element).each(function(){
+        $(this).data('height', $(this).height());
+        $(this).data('width', $(this).width());
+    });
+
+    scaleBannerVideoSize(element);
+
+}
+
+function scaleBannerVideoSize(element){
+
+    var windowWidth = $(window).width(),
+    windowHeight = $(window).height() + 5,
+    videoWidth,
+    videoHeight;
+
+    // console.log(windowHeight);
+
+    $(element).each(function(){
+        var videoAspectRatio = $(this).data('height')/$(this).data('width');
+
+        $(this).width(windowWidth);
+
+        if(windowWidth < 1000){
+            videoHeight = windowHeight;
+            videoWidth = videoHeight / videoAspectRatio;
+            $(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
+
+            $(this).width(videoWidth).height(videoHeight);
+        }
+
+        $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
+
+    });
+}
+
+</script>
+
+</body>
+
 </html>
